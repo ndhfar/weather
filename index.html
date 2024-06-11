@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Apps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cont-input">
+        <input
+          type="text"
+          name="input-city"
+          id="input-city"
+          class="input-city"
+          placeholder="Enter the city"
+          required
+        />
+        <button class="input-btn"><i class="bx bx-search"></i></button>
+      </div>
+      <div class="main-info"></div>
+      <div class="cont-information">
+        <div class="info-items">
+          <i class="bx bx-wind icon-info"></i>
+          <p class="information wind"></p>
+        </div>
+        <div class="info-items">
+          <i class="bx bx-droplet icon-info"></i>
+          <p class="information humidity"></p>
+        </div>
+        <div class="info-items">
+          <i class="bx bx-time icon-info"></i>
+          <p class="information pressure"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

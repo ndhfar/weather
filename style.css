@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --WHITE: #f6f4eb;
+  --BLUE: #91c8e4;
+  --DARK-BLUE: #4682a9;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, var(--BLUE) 30%, var(--WHITE));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--DARK-BLUE);
+}
+
+/* CONTAINER */
+.container {
+  backdrop-filter: blur(10px);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 var(--DARK-BLUE);
+  overflow: hidden;
+}
+
+/* INPUT */
+.cont-input {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1.5px solid var(--DARK-BLUE);
+  border-radius: 10px;
+}
+
+.input-city {
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  border: none;
+  outline: none;
+  color: var(--DARK-BLUE);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input-city::placeholder {
+  color: var(--DARK-BLUE);
+  font-weight: 500;
+}
+
+.input-btn {
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--DARK-BLUE);
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.scaled {
+  transform: scale(0.9);
+}
+
+/* CITY */
+.main-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city {
+  margin-block: 15px 5px;
+  text-align: center;
+}
+
+.weather-image {
+  width: 50%;
+  margin-bottom: 5px;
+}
+
+.temp {
+  font-size: 40px;
+}
+
+.weather {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.cont-information {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.showed {
+  display: flex;
+}
+
+.info-items {
+  background-color: var(--DARK-BLUE);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 5px;
+  border: 1.5px solid var(--WHITE);
+  border-radius: 5px;
+  color: var(--WHITE);
+}
+
+.icon-info {
+  font-size: 22px;
+}
+
+.information {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    backdrop-filter: blur(0);
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 20px;
+    gap: 50px;
+  }
+}
